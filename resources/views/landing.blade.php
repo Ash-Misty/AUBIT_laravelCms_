@@ -202,6 +202,57 @@
   opacity: 1;
   z-index: 1;
 }
+/* Section Background */
+.seminar-section {
+    background: linear-gradient(135deg, #e0ecff, #f8fbff);
+}
+
+/* Title Gradient */
+.seminar-title {
+    font-size: 2.3rem;
+    background: linear-gradient(90deg, #0d6efd, #4dabf7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Card Styling */
+.seminar-card {
+    background: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.seminar-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+}
+
+/* Image Overlay */
+.img-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.35), rgba(0,0,0,0));
+}
+
+/* Card Body Separation */
+.card-body {
+    border-top: 1px solid #eef2f7;
+}
+
+/* Swiper Buttons */
+.swiper-button-prev,
+.swiper-button-next {
+    color: #0d6efd;
+    background: white;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+.swiper-pagination-bullet-active {
+    background: #0d6efd;
+}
+
 </style>
 </head>
 <body>
@@ -223,7 +274,7 @@
       </header>
     </div>
 
-   <section class="relative h-[90vh] bg-cover bg-center" style="background-image: url('/Asserts/bg.png');">
+   {{-- <section class="relative h-[90vh] bg-cover bg-center" style="background-image: url('/Asserts/bg.png');">
     <div class="absolute inset-0 bg-gradient-to-b from-black/60 to-black/90 flex flex-col items-center justify-center text-white text-center px-4">
     <h2 class="text-4xl md:text-6xl font-extrabold tracking-wide drop-shadow-lg animate__animated animate__fadeInDown">
       ANNA UNIVERSITY TRICHY
@@ -234,8 +285,123 @@
     <a href="/readmore" class="mt-6 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full font-semibold shadow-lg transition duration-300">
       Know More
     </a>
+</div>
+  </section> --}}
+  {{-- <section class="relative h-[90vh] bg-cover bg-center" style="background-image: url('/Asserts/bg.png'); min-height: 90vh;">
 
-  </section>
+  <!-- Overlay -->
+  <div class="absolute inset-0 bg-black/70"></div>
+
+  <!-- Content -->
+  <div class="relative z-10 flex flex-col items-center justify-center text-white text-center px-4 h-full">
+
+    <h2 class="text-4xl md:text-6xl font-extrabold tracking-wide drop-shadow-lg animate__animated animate__fadeInDown">
+      ANNA UNIVERSITY TRICHY
+    </h2>
+
+    <p class="mt-4 text-lg md:text-xl font-medium animate__animated animate__fadeInUp">
+      Empowering Minds, Shaping Futures
+    </p>
+
+    <a href="/readmore" class="mt-6 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full font-semibold shadow-lg transition duration-300">
+      Know More
+    </a>
+
+  </div>
+</section> --}}
+{{-- <section class="relative h-[90vh] bg-cover bg-center" style="background-image: url('/Asserts/bg.png'); min-height: 90vh;">
+
+  <!-- 🔥 Black Shadow Overlay -->
+  <div class="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black/90"></div>
+
+  <!-- Content -->
+  <div class="relative z-10 flex flex-col items-center justify-center text-white text-center px-4 h-full">
+
+    <h2 class="text-4xl md:text-6xl font-extrabold tracking-wide drop-shadow-lg animate__animated animate__fadeInDown">
+      ANNA UNIVERSITY TRICHY
+    </h2>
+
+    <p class="mt-4 text-lg md:text-xl font-medium animate__animated animate__fadeInUp">
+      Empowering Minds, Shaping Futures
+    </p>
+
+    <a href="/readmore" class="mt-6 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full font-semibold shadow-lg transition duration-300">
+      Know More
+    </a>
+
+  </div>
+</section> --}}
+{{-- <section
+  class="relative h-[90vh] bg-cover bg-center"
+  style="
+    background-image: url('/Asserts/bg.png');
+    min-height: 90vh;
+    box-shadow: inset 0 0 300px rgba(0, 0, 0, 0.879);
+  "
+>
+
+  <div class="flex flex-col items-center justify-center text-white text-center px-4 h-full">
+
+    <h2 class="text-4xl md:text-6xl font-extrabold tracking-wide drop-shadow-lg animate__animated animate__fadeInDown">
+      ANNA UNIVERSITY TRICHY
+    </h2>
+
+    <p class="mt-4 text-lg md:text-xl font-medium animate__animated animate__fadeInUp">
+      Empowering Minds, Shaping Futures
+    </p>
+
+    <a href="/readmore" class="mt-6 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full font-semibold shadow-lg transition duration-300">
+      Know More
+    </a>
+
+  </div>
+</section> --}}
+{{-- <section class="relative h-[90vh] bg-cover bg-center" style="background-image: url('/Asserts/bg.png'); min-height: 90vh;">
+
+  <!-- FULL BLACK LAYER -->
+  <div class="absolute inset-0 bg-black/95"></div>
+
+  <!-- CONTENT -->
+  <div class="relative z-10 flex flex-col items-center justify-center text-white text-center px-4 h-full">
+
+    <h2 class="text-4xl md:text-6xl font-extrabold tracking-wide drop-shadow-lg animate__animated animate__fadeInDown">
+      ANNA UNIVERSITY TRICHY
+    </h2>
+
+    <p class="mt-4 text-lg md:text-xl font-medium animate__animated animate__fadeInUp">
+      Empowering Minds, Shaping Futures
+    </p>
+
+    <a href="/readmore" class="mt-6 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full font-semibold shadow-lg transition duration-300">
+      Know More
+    </a>
+
+  </div>
+</section> --}}
+<section class="relative h-[90vh] bg-cover bg-center" style="background-image: url('/Asserts/bg.png'); min-height: 90vh;">
+
+  <!-- EXTREME DARK OVERLAY -->
+  <div class="absolute inset-0" style="background: rgba(0,0,0,0.70);"></div>
+
+  <!-- CONTENT -->
+  <div class="relative z-10 flex flex-col items-center justify-center text-white text-center px-4 h-full">
+
+    <h2 class="text-4xl md:text-6xl font-extrabold tracking-wide drop-shadow-lg animate__animated animate__fadeInDown">
+      ANNA UNIVERSITY TRICHY
+    </h2>
+
+    <p class="mt-4 text-lg md:text-xl font-medium animate__animated animate__fadeInUp">
+      Empowering Minds, Shaping Futures
+    </p>
+
+    <a href="/about" class="mt-6 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full font-semibold shadow-lg transition duration-300">
+      Know More
+    </a>
+
+  </div>
+</section>
+
+
 
  <!--  About Section -->
    <section id="about">
@@ -366,7 +532,7 @@
 
 
 <!-- Seminar Updates – auto-cycling version -->
-<section id="carousel-section" class="py-5" style="background-color:#f0f8ff;">
+{{-- <section id="carousel-section" class="py-5" style="background-color:#f0f8ff;">
   <div class="container text-center mb-5">
     <h2 class="text-primary mb-5 fw-bold" style="font-size:2rem; text-shadow:0 1px 3px rgba(0,0,0,0.1);">
       Seminar Updates
@@ -424,6 +590,82 @@
     @else
       <div class="alert alert-info mx-auto" style="max-width: 260px;">No upcoming seminars currently scheduled</div>
     @endif
+  </div>
+</section> --}}
+
+<section id="carousel-section" class="py-5 seminar-section">
+  <div class="container text-center mb-5">
+    <h2 class="mb-5 fw-bold seminar-title">Seminar Updates</h2>
+
+    @if($seminars->count())
+      <div class="swiper seminar-swiper">
+        <div class="swiper-wrapper">
+          @foreach($seminars as $seminar)
+            <div class="swiper-slide">
+              <div class="card h-100 border-0 shadow-lg rounded-4 overflow-hidden seminar-card">
+
+                <!-- Image Area -->
+                <div class="ratio ratio-4x5 position-relative">
+                  <img src="{{ asset('storage/' . $seminar->image) }}"
+                       alt="{{ $seminar->title }}"
+                       class="w-100 h-100 object-fit-cover"
+                       loading="lazy"
+                       onerror="this.style.display='none';">
+                  <div class="img-overlay"></div>
+                </div>
+
+                <!-- Content -->
+                <div class="card-body text-start">
+                  <h5 class="fw-semibold mb-2">{{ $seminar->topic }}</h5>
+                  <ul class="list-unstyled small mb-0 text-dark">
+                    <li class="d-flex align-items-center mb-2">
+                      <i class="bi bi-calendar-event me-2 text-primary"></i>
+                      {{ \Carbon\Carbon::parse($seminar->date)->format('d M Y') }}
+                    </li>
+                    <li class="d-flex align-items-center mb-2">
+                      <i class="bi bi-clock me-2 text-primary"></i>
+                      {{ \Carbon\Carbon::parse($seminar->time)->format('h:i A') }}
+                    </li>
+                    <li class="d-flex align-items-center">
+                      <i class="bi bi-geo-alt me-2 text-primary"></i>
+                      {{ $seminar->venue }}
+                    </li>
+                  </ul>
+                </div>
+
+              </div>
+            </div>
+          @endforeach
+        </div>
+
+        <!-- Swiper Controls -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-pagination mt-4"></div>
+      </div>
+
+      {{-- <div class="d-flex justify-content-center gap-3 mt-4 flex-wrap">
+        <a href="{{ route('seminarall') }}" class="btn btn-outline-primary fw-semibold px-4 shadow-sm rounded-pill">
+          View All Seminars
+        </a>
+        <a href="{{ route('login') }}" class="btn btn-primary fw-semibold px-4 shadow-sm rounded-pill">
+          Register Now
+        </a>
+      </div> --}}
+    @else
+      <div class="alert alert-info mx-auto" style="max-width: 260px;">
+        No upcoming seminars currently scheduled
+      </div>
+    @endif
+
+    <div class="d-flex justify-content-center gap-3 mt-4 flex-wrap">
+        <a href="{{ route('seminarall') }}" class="btn btn-outline-primary fw-semibold px-4 shadow-sm rounded-pill">
+          View All Seminars
+        </a>
+        <a href="{{ route('login') }}" class="btn btn-primary fw-semibold px-4 shadow-sm rounded-pill">
+          Register Now
+        </a>
+      </div>
   </div>
 </section>
 
